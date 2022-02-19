@@ -1,7 +1,8 @@
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/test;MVCC=TRUE
+    url: jdbc:h2:tcp://localhost/~/jpashop
     username: sa
+    password:
     driver-class-name: org.h2.Driver
   jpa:
     hibernate:
@@ -14,4 +15,5 @@ spring:
 logging:
   level:
     org.hibernate.SQL: debug
+    org.hibernate.type: trace
 
